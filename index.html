@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +8,9 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
+        rel="stylesheet" />
     <!-- Font Awesome 6 (free) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <style>
@@ -54,6 +57,7 @@
             text-decoration: none;
             transition: color var(--transition);
         }
+
         a:hover {
             color: var(--secondary);
         }
@@ -68,13 +72,16 @@
         ::-webkit-scrollbar {
             width: 8px;
         }
+
         ::-webkit-scrollbar-track {
             background: var(--bg);
         }
+
         ::-webkit-scrollbar-thumb {
             background: var(--primary);
             border-radius: 10px;
         }
+
         ::-webkit-scrollbar-thumb:hover {
             background: var(--primary-light);
         }
@@ -148,6 +155,7 @@
             letter-spacing: -0.02em;
             color: #fff;
         }
+
         .logo span {
             color: var(--primary-light);
         }
@@ -157,6 +165,7 @@
             gap: 32px;
             list-style: none;
         }
+
         .nav-links a {
             font-size: 0.9rem;
             font-weight: 500;
@@ -164,6 +173,7 @@
             position: relative;
             transition: color var(--transition);
         }
+
         .nav-links a::after {
             content: '';
             position: absolute;
@@ -174,9 +184,11 @@
             background: var(--primary-light);
             transition: width var(--transition);
         }
+
         .nav-links a:hover {
             color: #fff;
         }
+
         .nav-links a:hover::after {
             width: 100%;
         }
@@ -190,6 +202,7 @@
             cursor: pointer;
             padding: 4px;
         }
+
         .nav-toggle span {
             display: block;
             width: 28px;
@@ -229,6 +242,7 @@
             color: var(--primary-light);
             margin-bottom: 24px;
         }
+
         .hero-badge .dot {
             width: 10px;
             height: 10px;
@@ -236,12 +250,15 @@
             background: #00e676;
             animation: pulse-dot 2s infinite;
         }
+
         @keyframes pulse-dot {
+
             0%,
             100% {
                 opacity: 1;
                 transform: scale(1);
             }
+
             50% {
                 opacity: 0.5;
                 transform: scale(0.8);
@@ -255,6 +272,7 @@
             letter-spacing: -0.02em;
             margin-bottom: 16px;
         }
+
         .hero h1 .highlight {
             background: linear-gradient(135deg, var(--primary-light), var(--secondary));
             -webkit-background-clip: text;
@@ -291,17 +309,20 @@
             color: #fff;
             box-shadow: 0 8px 24px rgba(108, 92, 231, 0.3);
         }
+
         .btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 14px 32px rgba(108, 92, 231, 0.45);
             background: var(--primary-dark);
         }
+
         .btn-outline {
             background: transparent;
             border: 1.5px solid var(--border);
             color: var(--text);
             box-shadow: none;
         }
+
         .btn-outline:hover {
             border-color: var(--primary-light);
             background: rgba(108, 92, 231, 0.08);
@@ -330,11 +351,14 @@
             position: relative;
             animation: float 6s ease-in-out infinite;
         }
+
         @keyframes float {
+
             0%,
             100% {
                 transform: translateY(0px);
             }
+
             50% {
                 transform: translateY(-16px);
             }
@@ -347,12 +371,14 @@
             border: 2px solid rgba(108, 92, 231, 0.15);
             animation: spin-ring 20s linear infinite;
         }
+
         .hero-avatar .ring:nth-child(2) {
             inset: -24px;
             border-color: rgba(0, 206, 201, 0.1);
             animation-duration: 30s;
             animation-direction: reverse;
         }
+
         @keyframes spin-ring {
             to {
                 transform: rotate(360deg);
@@ -373,30 +399,37 @@
             animation: float-tag 5s ease-in-out infinite;
             white-space: nowrap;
         }
+
         .float-tag i {
             margin-right: 6px;
             color: var(--secondary);
         }
+
         .float-tag:nth-child(3) {
             top: 10%;
             right: -10%;
             animation-delay: 0.5s;
         }
+
         .float-tag:nth-child(4) {
             bottom: 15%;
             left: -15%;
             animation-delay: 1.2s;
         }
+
         .float-tag:nth-child(5) {
             bottom: 30%;
             right: -5%;
             animation-delay: 2s;
         }
+
         @keyframes float-tag {
+
             0%,
             100% {
                 transform: translateY(0px);
             }
+
             50% {
                 transform: translateY(-8px);
             }
@@ -429,6 +462,7 @@
             position: relative;
             overflow: hidden;
         }
+
         .timeline-item::before {
             content: '';
             position: absolute;
@@ -439,6 +473,7 @@
             background: linear-gradient(to bottom, var(--primary), var(--secondary));
             border-radius: 4px 0 0 4px;
         }
+
         .timeline-item:hover {
             background: var(--bg-card-hover);
             border-color: var(--primary);
@@ -454,15 +489,18 @@
             margin-bottom: 12px;
             gap: 12px;
         }
+
         .timeline-company {
             font-size: 1.4rem;
             font-weight: 700;
             color: #fff;
         }
+
         .timeline-company i {
             color: var(--primary-light);
             margin-right: 10px;
         }
+
         .timeline-date {
             font-size: 0.85rem;
             font-weight: 500;
@@ -472,24 +510,28 @@
             border-radius: 40px;
             border: 1px solid var(--border);
         }
+
         .timeline-role {
             font-size: 1rem;
             font-weight: 600;
             color: var(--primary-light);
             margin-bottom: 16px;
         }
+
         .timeline-desc {
             list-style: none;
             display: flex;
             flex-direction: column;
             gap: 10px;
         }
+
         .timeline-desc li {
             display: flex;
             gap: 14px;
             font-size: 0.95rem;
             color: var(--text-muted);
         }
+
         .timeline-desc li i {
             color: var(--secondary);
             font-size: 0.9rem;
@@ -504,6 +546,7 @@
             gap: 16px;
             margin-top: 12px;
         }
+
         .skill-chip {
             background: var(--bg-card);
             border: 1px solid var(--border);
@@ -519,10 +562,12 @@
             justify-content: center;
             gap: 10px;
         }
+
         .skill-chip i {
             color: var(--primary-light);
             font-size: 1rem;
         }
+
         .skill-chip:hover {
             border-color: var(--primary-light);
             background: var(--bg-card-hover);
@@ -536,6 +581,7 @@
             gap: 14px;
             margin-top: 20px;
         }
+
         .cert-item {
             background: var(--bg-card);
             border: 1px solid var(--border);
@@ -548,85 +594,184 @@
             gap: 10px;
             transition: var(--transition);
         }
+
         .cert-item i {
             color: #f1c40f;
         }
+
         .cert-item:hover {
             border-color: var(--secondary);
             color: #fff;
         }
 
         /* Certificate Grid */
-.cert-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 24px;
-    margin-top: 10px;
-}
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 24px;
+            margin-top: 10px;
+        }
 
-/* Each certificate card */
-.cert-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 18px 18px 16px;
-    text-align: center;
-    cursor: pointer;
-    transition: all var(--transition);
-    overflow: hidden;
-}
+        /* Each certificate card */
+        .cert-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 18px 18px 16px;
+            text-align: center;
+            cursor: pointer;
+            transition: all var(--transition);
+            overflow: hidden;
+        }
 
-.cert-card:hover {
-    transform: translateY(-8px);
-    border-color: var(--primary-light);
-    box-shadow: 0 16px 40px rgba(108, 92, 231, 0.15);
-    background: var(--bg-card-hover);
-}
+        .cert-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--primary-light);
+            box-shadow: 0 16px 40px rgba(108, 92, 231, 0.15);
+            background: var(--bg-card-hover);
+        }
 
-/* The certificate image */
-.cert-card img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;        /* Crops nicely to fit */
-    border-radius: 12px;
-    border: 1px solid var(--border);
-    transition: transform 0.3s ease;
-    background: #fff;        /* White background for paper certificates */
-}
+        /* The certificate image */
+        .cert-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            /* Crops nicely to fit */
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: transform 0.3s ease;
+            background: #fff;
+            /* White background for paper certificates */
+        }
 
-.cert-card:hover img {
-    transform: scale(1.02);   /* Slight zoom on hover */
-}
+        .cert-card:hover img {
+            transform: scale(1.02);
+            /* Slight zoom on hover */
+        }
 
-/* Certificate text */
-.cert-card-title {
-    font-weight: 700;
-    font-size: 0.9rem;
-    margin-top: 14px;
-    color: #fff;
-    line-height: 1.3;
-}
+        /* Certificate text */
+        .cert-card-title {
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-top: 14px;
+            color: #fff;
+            line-height: 1.3;
+        }
 
-.cert-card-sub {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    margin-top: 4px;
-}
+        .cert-card-sub {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
 
-/* Responsive */
-@media (max-width: 600px) {
-    .cert-grid {
-        grid-template-columns: 1fr 1fr; /* 2 columns on small screens */
-    }
-    .cert-card img {
-        height: 120px;
-    }
-}
-@media (max-width: 420px) {
-    .cert-grid {
-        grid-template-columns: 1fr; /* 1 column on very small screens */
-    }
-}
+        /* ---------- Modal (Lightbox) ---------- */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(11, 10, 22, 0.92);
+            backdrop-filter: blur(8px);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-content {
+            display: block;
+            max-width: 90%;
+            max-height: 85%;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 16px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8);
+            object-fit: contain;
+            background: #fff;
+            padding: 10px;
+        }
+
+        /* Close button */
+        .modal-close {
+            position: absolute;
+            top: 30px;
+            right: 50px;
+            color: #fff;
+            font-size: 3rem;
+            font-weight: 300;
+            cursor: pointer;
+            transition: 0.3s;
+            z-index: 10;
+            line-height: 1;
+        }
+
+        .modal-close:hover {
+            color: var(--primary-light);
+            transform: rotate(90deg);
+        }
+
+        /* Caption */
+        .modal-caption {
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: #ccc;
+            font-size: 1rem;
+            padding: 0 20px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .cert-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .cert-card img {
+                height: 120px;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .cert-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .cert-grid {
+                grid-template-columns: 1fr 1fr;
+                /* 2 columns on small screens */
+            }
+
+            .cert-card img {
+                height: 120px;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .cert-grid {
+                grid-template-columns: 1fr;
+                /* 1 column on very small screens */
+            }
+        }
 
         /* ---------- EDUCATION ---------- */
         .edu-card {
@@ -640,19 +785,23 @@
             align-items: center;
             transition: var(--transition);
         }
+
         .edu-card:hover {
             border-color: var(--primary-light);
             background: var(--bg-card-hover);
             transform: scale(1.01);
         }
+
         .edu-left h3 {
             font-size: 1.3rem;
             font-weight: 700;
         }
+
         .edu-left p {
             color: var(--text-muted);
             margin-top: 4px;
         }
+
         .edu-right {
             text-align: right;
             color: var(--text-muted);
@@ -669,17 +818,20 @@
             color: var(--text-muted);
             font-size: 0.9rem;
         }
+
         footer .socials {
             display: flex;
             justify-content: center;
             gap: 24px;
             margin-bottom: 16px;
         }
+
         footer .socials a {
             font-size: 1.4rem;
             color: var(--text-muted);
             transition: var(--transition);
         }
+
         footer .socials a:hover {
             color: var(--primary-light);
             transform: translateY(-3px);
@@ -691,21 +843,26 @@
                 grid-template-columns: 1fr;
                 text-align: center;
             }
+
             .hero p {
                 margin-left: auto;
                 margin-right: auto;
             }
+
             .hero-actions {
                 justify-content: center;
             }
+
             .hero-avatar {
                 width: 240px;
                 height: 240px;
                 font-size: 5rem;
             }
+
             .float-tag {
                 display: none;
             }
+
             .timeline-item {
                 padding: 24px;
             }
@@ -725,19 +882,24 @@
                 transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
                 border-left: 1px solid var(--border);
             }
+
             .nav-links.open {
                 right: 0;
             }
+
             .nav-toggle {
                 display: flex;
                 z-index: 1001;
             }
+
             .nav-toggle.open span:nth-child(1) {
                 transform: rotate(45deg) translate(6px, 6px);
             }
+
             .nav-toggle.open span:nth-child(2) {
                 opacity: 0;
             }
+
             .nav-toggle.open span:nth-child(3) {
                 transform: rotate(-45deg) translate(6px, -6px);
             }
@@ -745,28 +907,35 @@
             .hero {
                 padding: 100px 0 60px;
             }
+
             .hero h1 {
                 font-size: 2.4rem;
             }
+
             .hero-avatar {
                 width: 180px;
                 height: 180px;
                 font-size: 4rem;
             }
+
             section {
                 padding: 60px 0;
             }
+
             .timeline-header {
                 flex-direction: column;
             }
+
             .edu-card {
                 flex-direction: column;
                 text-align: center;
                 gap: 12px;
             }
+
             .edu-right {
                 text-align: center;
             }
+
             .skills-grid {
                 grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
             }
@@ -776,10 +945,12 @@
             .container {
                 padding: 0 16px;
             }
+
             .btn {
                 padding: 12px 24px;
                 font-size: 0.85rem;
             }
+
             .timeline-item {
                 padding: 18px;
             }
@@ -791,19 +962,24 @@
             transform: translateY(40px);
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
+
         .reveal.visible {
             opacity: 1;
             transform: translateY(0);
         }
+
         .reveal-delay-1 {
             transition-delay: 0.1s;
         }
+
         .reveal-delay-2 {
             transition-delay: 0.2s;
         }
+
         .reveal-delay-3 {
             transition-delay: 0.3s;
         }
+
         .reveal-delay-4 {
             transition-delay: 0.4s;
         }
@@ -823,7 +999,7 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#education">Education</a></li> 
+                <li><a href="#education">Education</a></li>
             </ul>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <span></span><span></span><span></span>
@@ -844,9 +1020,9 @@
                         Hi, I'm <br /><span class="highlight">Jan Weir Otero</span>
                     </h1>
                     <p>
-                        Software Quality Assurance Engineer with over 6 years of experience in 
-                        both manual and automated testing of web-based applications. 
-                        Proficient in creating and executing test cases, performing functional testing, 
+                        Software Quality Assurance Engineer with over 6 years of experience in
+                        both manual and automated testing of web-based applications.
+                        Proficient in creating and executing test cases, performing functional testing,
                         non-functional testing and tracking defects.
                     </p>
                     <div class="hero-actions">
@@ -860,9 +1036,10 @@
                 </div>
                 <div class="hero-visual">
                     <div class="hero-avatar">
-                        
-                        <img src="myimage.jpeg" alt="Jan Weir Otero" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; zoom: 10%;">
-                        
+
+                        <img src="myimage.jpeg" alt="Jan Weir Otero"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; zoom: 10%;">
+
                         <div class="ring"></div>
                         <div class="ring"></div>
                     </div>
@@ -877,7 +1054,8 @@
             <div class="section-header reveal">
                 <span class="section-label"><i class="fas fa-briefcase"></i> Career</span>
                 <h2 class="section-title">Work Experience</h2>
-                <p class="section-sub">Over 6 years of delivering quality software across automotive, eCommerce, and ERP domains.</p>
+                <p class="section-sub">Over 6 years of delivering quality software across automotive, eCommerce, and ERP
+                    domains.</p>
             </div>
 
             <div class="timeline">
@@ -892,16 +1070,22 @@
                     </div>
                     <div class="timeline-role">Software Quality Assurance Engineer</div>
                     <ul class="timeline-desc">
-                        <li><i class="fas fa-check-circle"></i> Functional &amp; non-functional testing for 20+ eCommerce, CMS (WordPress), and ERP systems.</li>
-                        <li><i class="fas fa-check-circle"></i> Automated test scripts with Selenium (Maven, Cucumber, TestNG) and Playwright(Typescript and allure report) </li>
+                        <li><i class="fas fa-check-circle"></i> Functional &amp; non-functional testing for 20+
+                            eCommerce, CMS (WordPress), and ERP systems.</li>
+                        <li><i class="fas fa-check-circle"></i> Automated test scripts with Selenium (Maven, Cucumber,
+                            TestNG) and Playwright(Typescript and allure report) </li>
                         <li><i class="fas fa-check-circle"></i> Integrated scripts into Jenkins CI/CD pipelines.</li>
-                        <li><i class="fas fa-check-circle"></i> Stress &amp; load testing with JMeter to validate performance under peak traffic.</li>
-                        <li><i class="fas fa-check-circle"></i> Leveraged an AI-powered quality engine (Python + Google Gemini 2.5 Flash) to generate test cases and automation scripts from a single requirement.</li>
-                        <li><i class="fas fa-check-circle"></i> Used Vision AI to instantly create comprehensive manual test suites from UI screenshots, wireframes, and JIRA requirements.</li>
+                        <li><i class="fas fa-check-circle"></i> Stress &amp; load testing with JMeter to validate
+                            performance under peak traffic.</li>
+                        <li><i class="fas fa-check-circle"></i> Leveraged an AI-powered quality engine (Python + Google
+                            Gemini 2.5 Flash) to generate test cases and automation scripts from a single requirement.
+                        </li>
+                        <li><i class="fas fa-check-circle"></i> Used Vision AI to instantly create comprehensive manual
+                            test suites from UI screenshots, wireframes, and JIRA requirements.</li>
                     </ul>
                 </div>
 
-                                <!-- i4 Asia -->
+                <!-- i4 Asia -->
                 <div class="timeline-item reveal reveal-delay-1">
                     <div class="timeline-header">
                         <span class="timeline-company">
@@ -911,10 +1095,15 @@
                     </div>
                     <div class="timeline-role">Freelance Quality Assurance Test (Part Time)</div>
                     <ul class="timeline-desc">
-                        <li><i class="fas fa-check-circle"></i> Performed functional testing such as regression, smoke, and exploratory tests on different web and mobile applications to help deliver a smooth user experience and make sure everything worked well across platforms.</li>
-                        <li><i class="fas fa-check-circle"></i> Developed detailed test cases &amp; test scenarios on business requirements to maximize test coverage. </li>
-                        <li><i class="fas fa-check-circle"></i> Used Jira, GitHub, and Linear for bug documentation, defect tracking, and sprint management.</li>
-                        <li><i class="fas fa-check-circle"></i> Validated AI-driven websites, ensuring the accuracy, performance, and UI responsiveness of intelligent features.</li>
+                        <li><i class="fas fa-check-circle"></i> Performed functional testing such as regression, smoke,
+                            and exploratory tests on different web and mobile applications to help deliver a smooth user
+                            experience and make sure everything worked well across platforms.</li>
+                        <li><i class="fas fa-check-circle"></i> Developed detailed test cases &amp; test scenarios on
+                            business requirements to maximize test coverage. </li>
+                        <li><i class="fas fa-check-circle"></i> Used Jira, GitHub, and Linear for bug documentation,
+                            defect tracking, and sprint management.</li>
+                        <li><i class="fas fa-check-circle"></i> Validated AI-driven websites, ensuring the accuracy,
+                            performance, and UI responsiveness of intelligent features.</li>
                     </ul>
                 </div>
 
@@ -928,9 +1117,12 @@
                     </div>
                     <div class="timeline-role">Software Quality Assurance Engineer</div>
                     <ul class="timeline-desc">
-                        <li><i class="fas fa-check-circle"></i> Executed manual testing on automotive software components, ensuring compliance with functional specs and safety standards.</li>
-                        <li><i class="fas fa-check-circle"></i> Tested and reported software performance, ensuring reliability through thorough input data analysis.</li>
-                        <li><i class="fas fa-check-circle"></i> Analyzed detailed specifications to identify root causes of defects and formulated effective solutions.</li>
+                        <li><i class="fas fa-check-circle"></i> Executed manual testing on automotive software
+                            components, ensuring compliance with functional specs and safety standards.</li>
+                        <li><i class="fas fa-check-circle"></i> Tested and reported software performance, ensuring
+                            reliability through thorough input data analysis.</li>
+                        <li><i class="fas fa-check-circle"></i> Analyzed detailed specifications to identify root causes
+                            of defects and formulated effective solutions.</li>
                     </ul>
                 </div>
 
@@ -948,22 +1140,33 @@
             </div>
 
             <div class="skills-grid reveal">
-                <div class="skill-chip"><img src="Certificate\logos\Java--Streamline-Svg-Logos.svg" alt="Java" class="skill-icon"> Java</div>
-                <div class="skill-chip"><img src="Certificate\logos\Selenium--Streamline-Svg-Logos.svg" alt="Selenium" class="skill-icon"> Selenium</div>
-                <div class="skill-chip"><img src="Certificate\logos\Cucumber--Streamline-Svg-Logos.svg" alt="Cucumber" class="skill-icon"> Cucumber</div>
-                <div class="skill-chip"><img src="Certificate\logos\Maven--Streamline-Svg-Logos.svg" alt="Maven" class="skill-icon"> Maven</div>
+                <div class="skill-chip"><img src="Certificate\logos\Java--Streamline-Svg-Logos.svg" alt="Java"
+                        class="skill-icon"> Java</div>
+                <div class="skill-chip"><img src="Certificate\logos\Selenium--Streamline-Svg-Logos.svg" alt="Selenium"
+                        class="skill-icon"> Selenium</div>
+                <div class="skill-chip"><img src="Certificate\logos\Cucumber--Streamline-Svg-Logos.svg" alt="Cucumber"
+                        class="skill-icon"> Cucumber</div>
+                <div class="skill-chip"><img src="Certificate\logos\Maven--Streamline-Svg-Logos.svg" alt="Maven"
+                        class="skill-icon"> Maven</div>
                 <div class="skill-chip"><i class="fas fa-check-double"></i> TestNG</div>
-                <div class="skill-chip"><img src="Certificate\logos\Apache--Streamline-Svg-Logos.svg" alt="JMeter" class="skill-icon"> JMeter</div>
-                <div class="skill-chip"><img src="Certificate\logos\Postman-Icon--Streamline-Svg-Logos.svg" alt="Postman" class="skill-icon"> Postman</div>
-                <div class="skill-chip"><img src="Certificate\logos\Jenkins--Streamline-Svg-Logos.svg" alt="Jenkins" class="skill-icon"> Jenkins</div>
-                <div class="skill-chip"><img src="Certificate\logos\Gitlab--Streamline-Svg-Logos.svg" alt="GitLab" class="skill-icon"> GitLab</div>
-                <div class="skill-chip"><img src="Certificate\logos\Jira--Streamline-Svg-Logos.svg" alt="Jira" class="skill-icon"> Jira</div>
+                <div class="skill-chip"><img src="Certificate\logos\Apache--Streamline-Svg-Logos.svg" alt="JMeter"
+                        class="skill-icon"> JMeter</div>
+                <div class="skill-chip"><img src="Certificate\logos\Postman-Icon--Streamline-Svg-Logos.svg"
+                        alt="Postman" class="skill-icon"> Postman</div>
+                <div class="skill-chip"><img src="Certificate\logos\Jenkins--Streamline-Svg-Logos.svg" alt="Jenkins"
+                        class="skill-icon"> Jenkins</div>
+                <div class="skill-chip"><img src="Certificate\logos\Gitlab--Streamline-Svg-Logos.svg" alt="GitLab"
+                        class="skill-icon"> GitLab</div>
+                <div class="skill-chip"><img src="Certificate\logos\Jira--Streamline-Svg-Logos.svg" alt="Jira"
+                        class="skill-icon"> Jira</div>
                 <div class="skill-chip"><i class="fab fa-wordpress"></i> WordPress</div>
                 <div class="skill-chip"><i class="fab fa-shopify"></i> Shopify</div>
                 <div class="skill-chip"><i class="fas fa-check-circle"></i> Functional Testing</div>
                 <div class="skill-chip"><i class="fas fa-times-circle"></i> Non-Functional Testing</div>
-                <div class="skill-chip"><img src="Certificate\logos\Docker-Icon--Streamline-Svg-Logos.svg" alt=" Docker" class="skill-icon"> Docker</div>
-                <div class="skill-chip"><img src="Certificate\logos\playwright.svg" alt="Playwright" class="skill-icon"> Playwright</div>
+                <div class="skill-chip"><img src="Certificate\logos\Docker-Icon--Streamline-Svg-Logos.svg" alt=" Docker"
+                        class="skill-icon"> Docker</div>
+                <div class="skill-chip"><img src="Certificate\logos\playwright.svg" alt="Playwright" class="skill-icon">
+                    Playwright</div>
             </div>
         </div>
     </section>
@@ -978,36 +1181,44 @@
             </div>
 
             <div class="cert-grid reveal">
-    <!-- Certificate 1 -->
-    <div class="cert-card" onclick="openZoom(this.querySelector('img'))">
-        <img src="Certificate\QA.png" alt="Automation Software QA Testing Certificate - MST Connect">
-        <div class="cert-card-title">Automation Software QA Testing</div>
-        <div class="cert-card-sub">MST Connect</div>
-    </div>
+                <!-- Certificate 1 -->
+                <div class="cert-card" onclick="openZoom(this.querySelector('img'))">
+                    <img src="Certificate\QA.png" alt="Automation Software QA Testing Certificate - MST Connect">
+                    <div class="cert-card-title">Automation Software QA Testing</div>
+                    <div class="cert-card-sub">MST Connect</div>
+                </div>
 
-    <!-- Certificate 2 -->
-    <div class="cert-card" onclick="openZoom(this.querySelector('img'))">
-        <img src="Certificate\Yenprovement.jpeg" alt="QA Manual Testing Certificate - YenProvement">
-        <div class="cert-card-title">QA Manual Testing</div>
-        <div class="cert-card-sub">YenProvement</div>
-    </div>
+                <!-- Certificate 2 -->
+                <div class="cert-card" onclick="openZoom(this.querySelector('img'))">
+                    <img src="Certificate\Yenprovement.jpeg" alt="QA Manual Testing Certificate - YenProvement">
+                    <div class="cert-card-title">QA Manual Testing</div>
+                    <div class="cert-card-sub">YenProvement</div>
+                </div>
 
-    <!-- Certificate 3 -->
-    <div class="cert-card" onclick="openZoom(this.querySelector('img'))">
-        <img src="Certificate\Rahul Shetty.jpg" alt="Selenium WebDriver with Java Certificate - Rahul Shetty Academy">
-        <div class="cert-card-title">Selenium WebDriver with Java</div>
-        <div class="cert-card-sub">Rahul Shetty Academy</div>
-    </div>
+                <!-- Certificate 3 -->
+                <div class="cert-card" onclick="openZoom(this.querySelector('img'))">
+                    <img src="Certificate\Rahul Shetty.jpg"
+                        alt="Selenium WebDriver with Java Certificate - Rahul Shetty Academy">
+                    <div class="cert-card-title">Selenium WebDriver with Java</div>
+                    <div class="cert-card-sub">Rahul Shetty Academy</div>
+                </div>
 
-    <!-- Certificate 4 -->
-    <div class="cert-card" onclick="openZoom(this.querySelector('img'))">
-        <img src="Certificate\Postman.jpg" alt="Webservices API Testing with Postman - Learn IT University">
-        <div class="cert-card-title">Webservices API Testing with Postman</div>
-        <div class="cert-card-sub">Learn IT University</div>
-    </div>
-</div>
+                <!-- Certificate 4 -->
+                <div class="cert-card" onclick="openZoom(this.querySelector('img'))">
+                    <img src="Certificate\Postman.jpg" alt="Webservices API Testing with Postman - Learn IT University">
+                    <div class="cert-card-title">Webservices API Testing with Postman</div>
+                    <div class="cert-card-sub">Learn IT University</div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- ===== MODAL (Lightbox) ===== -->
+    <div id="imageModal" class="modal" onclick="closeZoom()">
+        <span class="modal-close" onclick="closeZoom()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div class="modal-caption" id="modalCaption">Certificate</div>
+    </div>
 
     <!-- ===== EDUCATION ===== -->
     <section id="education">
@@ -1034,7 +1245,8 @@
     <footer>
         <div class="container">
             <div class="socials">
-                <a href="https://www.linkedin.com/in/jan-weir-otero/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/jan-weir-otero/" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/janweirotero" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 <a href="mailto:oterojanweir@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 <a href="tel:+09500023343" aria-label="Phone"><i class="fas fa-phone-alt"></i></a>
@@ -1046,7 +1258,7 @@
     <!-- ===== SCRIPTS ===== -->
     <script>
         // -------- Particles (Canvas) --------
-        (function() {
+        (function () {
             const canvas = document.getElementById('particles-canvas');
             const ctx = canvas.getContext('2d');
             let w, h;
@@ -1157,7 +1369,7 @@
 
         // -------- Smooth anchor scroll (no jump) --------
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
                     e.preventDefault();
@@ -1168,6 +1380,37 @@
 
         document.getElementById('year').textContent = new Date().getFullYear();
 
+        // -------- Open Zoom (Lightbox) --------
+        function openZoom(imgElement) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImg');
+            const caption = document.getElementById('modalCaption');
+
+            modal.style.display = 'block';
+            modalImg.src = imgElement.src;
+            caption.innerHTML = imgElement.alt || 'Certificate';
+        }
+
+        // -------- Close Zoom --------
+        function closeZoom() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+
+        // -------- Close with ESC Key --------
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                closeZoom();
+            }
+        });
+
+        // -------- Close by clicking outside the image --------
+        document.getElementById('imageModal').addEventListener('click', function (event) {
+            if (event.target === this) {
+                closeZoom();
+            }
+        });
+
     </script>
 </body>
+
 </html>
